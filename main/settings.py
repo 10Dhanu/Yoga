@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = ['yoga-7cps.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['yogified.de', 'www.yogified.de']
 
 
 # Application definition
