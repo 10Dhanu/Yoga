@@ -1,0 +1,800 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+#ftco-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    /* Dark background color */
+    padding: 1rem 5;
+
+}
+
+.navbar-logo {
+    height: 90px;
+    /* Adjust size as needed */
+    width: auto;
+    /* Keep aspect ratio */
+    margin: auto;
+}
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    /* Align logo vertically */
+    height: 60px;
+    /* Adjust navbar height */
+    margin-top: -20px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    /* Spacing between links */
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black;
+    /* White text for links */
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #ff6f61;
+    /* Coral hover effect */
+}
+
+.nav-item {
+    list-style: none;
+}
+
+/* Center Navbar Items */
+.navbar-collapse {
+    justify-content: center;
+    text-align: center;
+}
+
+/* Additional Styling for Consistency */
+header {
+    background-color: white;
+    /* Matches the navbar background */
+    padding-bottom: 8rem;
+}
+
+header .container-fluid {
+    padding: 0 2rem;
+}
+
+
+/* Banner Section for Index.html */
+.banner-area {
+    position: relative;
+    background-size: contain;
+    background-position: right;
+    color: #fff;
+    text-align: left;
+    height: 500vh;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.banner-img {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    /* Center the image horizontally */
+    align-items: right;
+    /* Center the image vertically */
+    margin-right: 6rem;
+    /* Adjust the right margin for spacing */
+}
+
+.banner-area .banner-content h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    color: #fff;
+    line-height: 1.9;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    color: orangered;
+    line-height: 1.6;
+
+
+}
+
+.banner-area .banner-content h1 span {
+    color: orange;
+}
+
+.banner-area .banner-content a.primary-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* Section Styling for Index.html */
+.about-area {
+    padding: 4rem 0;
+    /* Top and bottom spacing for the section */
+    background-color: #f8f9fa;
+    /* Light background color */
+}
+
+.section-title-wrap {
+    margin-bottom: 2rem;
+    /* Space below the title */
+}
+
+.section-title-wrap h1 {
+    font-size: 2.5rem;
+    /* Main title size */
+    color: #333333;
+    /* Primary color */
+    margin-bottom: 0.5rem;
+}
+
+.section-title-wrap p {
+    font-size: 1rem;
+    /* Subtitle size */
+    color: #555;
+    /* Grayish color for subtitle */
+}
+
+/* About Right (Text Blocks) */
+.about-right {
+    padding: 2rem;
+    /* Spacing around the text content */
+}
+
+.single-about {
+    background-color: #fff;
+    /* White background for cards */
+    padding: 1.5rem;
+    /* Inner spacing for the card */
+    margin-bottom: 1.5rem;
+    /* Space between cards */
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    text-align: center;
+    /* Ensures text is centered */
+    height: 80%;
+
+}
+
+.single-about:hover {
+    transform: translateY(-5px);
+    /* Move up slightly on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow on hover */
+}
+
+.single-about h4 {
+    font-size: 1rem;
+    /* Heading size for cards */
+    color: #007bff;
+    /* Blue heading color */
+    margin-bottom: 0.5rem;
+}
+
+.single-about img {
+    margin-bottom: 1rem;
+    width: 60px;
+    /* Adjust the width to a smaller size */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* About Left (Image Section) */
+.about-left img {
+    max-width: 100%;
+    /* Responsive image */
+}
+
+.image-section img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 50px;
+    /* Adjust space between image and heading */
+}
+
+.services {
+    text-align: center;
+    padding: 80px;
+    background-color: #f8f9fa;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-top: -80px;
+    margin-bottom: 30px;
+    color: orange;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: #fff;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    font-size: 1.2rem;
+    padding: 15px;
+    color: #333;
+}
+
+.service-card .btn {
+    display: block;
+    text-align: center;
+    background: orange;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.service-card .btn:hover {
+    background: orange;
+}
+
+
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Banner Section for base.html */
+.banner-area {
+    position: relative;
+    height: 250px;
+    /* Smaller height for the class banner */
+    background-size: cover;
+    /* Ensures image covers the entire banner area */
+    background-position: center;
+    /* Centers the background image */
+    background-repeat: no-repeat;
+
+}
+
+.banner-area .banner-content h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+
+/* Section Styling */
+/* Add space below the Services heading */
+.section-title-wrap h1 {
+    margin-bottom: 30px;
+    /* Adjust space below the heading */
+    color: orange;
+}
+
+.services-section {
+    margin-top: 50px;
+    /* Adjusts space above the section */
+    padding-top: 20px;
+    /* Adds internal spacing */
+}
+
+/* Ensure images stay in a row */
+.services-section .row {
+    display: flex;
+    justify-content: center;
+    /* Centers the images */
+    gap: 100px;
+    /* Adds spacing between columns */
+    flex-wrap: wrap;
+    /* Ensures responsiveness */
+}
+
+/* Style the classes */
+.classes {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Ensure images are the same height */
+.classes img {
+    width: 100%;
+    /* Ensures all images scale evenly */
+    max-height: 250px;
+    /* Keeps images uniform */
+    object-fit: cover;
+    /* Ensures they don't stretch */
+    border-radius: 10px;
+}
+
+/* Make sure text aligns properly */
+.classes h3 {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Classes Container */
+.classes {
+    position: relative;
+    margin: 20px;
+    border-radius: 0;
+    /* Adds rounded corners */
+    overflow: hidden;
+    /* Ensures content doesn't overflow */
+}
+
+.classes:hover {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+}
+
+/* Image Styling */
+.img-fluid {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    /* Set a fixed height for images */
+    background-size: cover;
+    /* Ensures the image covers the entire area */
+    background-position: center;
+    /* Centers the image */
+    border-radius: 0;
+    /* Rounds the top corners */
+
+}
+
+/* Ensure the image does not stretch */
+.yoga-image {
+    width: 100%;
+    /* Make it responsive */
+    max-width: 800px;
+    /* Limit max width */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto;
+    /* Center align */
+    border-radius: 10px;
+    /* Optional: Rounded corners */
+}
+
+/* Add space between image and heading */
+.yoga-description {
+    font-weight: bold;
+    /* Make heading bold */
+    font-size: 24px;
+    /* Increase font size */
+    text-align: center;
+}
+
+.yoga-text {
+    color: #ff5733;
+    /* Change to any color (e.g., red-orange) */
+    margin-top: 30px;
+}
+
+
+/* Add spacing below Benefits heading */
+.benefits-title {
+    margin-bottom: 15px;
+    /* Adjust as needed */
+}
+
+/* Add spacing below the benefits list */
+.benefits-list {
+    margin-bottom: 30px;
+    /* Adjust the spacing as needed */
+    color: magenta;
+}
+
+/* Text Styling */
+.text {
+    background-color: #000000, 80% opacity;
+    /* Background for text */
+    padding: 1.2rem;
+    /* Adds padding around text */
+    text-align: center;
+    /* Centers text */
+}
+
+.text h3 {
+    font-size: 1.25rem;
+    /* Font size for headings */
+    font-weight: bold;
+    color: #333;
+    /* Darker text color */
+    margin: 0;
+}
+
+.text h3 a {
+    text-decoration: none;
+    /* Removes underline from links */
+    color: inherit;
+    /* Inherits color from h3 */
+}
+
+.text h3 a:hover {
+    color: #007bff;
+    /* Changes to blue on hover */
+}
+
+/* Centering the text container */
+.text-center {
+    text-align: center;
+    /* Center-aligns all child elements */
+    margin-top: 20px;
+    /* Adds spacing above the buttons */
+}
+
+
+/* Banner Section for About.html */
+.banner-area {
+    position: relative;
+    height: 300px;
+    /* Smaller height for the class banner */
+    background-size: cover;
+    /* Ensures image covers the entire banner area */
+    background-position: center;
+    /* Centers the background image */
+    background-repeat: no-repeat;
+
+}
+
+.banner-content h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 0;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+    background: #f8f9fa;
+    padding: 60px 0;
+
+
+}
+
+.why-choose-us h2 {
+    margin-bottom: 60px;
+    color: orange;
+    margin-top: 30px;
+}
+
+.instructor-section {
+    display: flex;
+    align-items: center;
+    /* Aligns text vertically with the image */
+    justify-content: center;
+    gap: 50px;
+    /* Space between image and text */
+    margin-top: 50px;
+    /* Adds space between title and section */
+    margin-bottom: 50px;
+    background: lightblue;
+
+}
+
+.instructor-section img {
+    width: 500px;
+    /* Adjusts image size */
+    height: auto;
+    border-radius: 10px;
+    /* Optional: Softens image edges */
+    background: lightblue;
+
+
+}
+
+.instructor-text {
+    width: 50%;
+    /* Limits text width for better readability */
+    font-size: 18px;
+    /* Improves text readability */
+    line-height: 1.8;
+    /* Improves spacing between lines */
+    text-align: justify;
+    /* Aligns text properly */
+    color: red;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    /* Space between title and image */
+    color: orange;
+}
+
+/* Call to Action */
+.cta {
+    background: lightblue;
+    color: magenta;
+    padding: 60px 0;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+
+/* Banner Section for Contact.html */
+.banner-area {
+    position: relative;
+    height: 300px;
+    /* Smaller height for the class banner */
+    background-size: cover;
+    /* Ensures image covers the entire banner area */
+    background-position: center;
+    /* Centers the background image */
+    background-repeat: no-repeat;
+
+}
+
+.banner-content h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    margin: 0;
+}
+
+/* Contact Page Styling */
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    /* Center the form horizontally and add spacing from top */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+    /* White background for the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Form Elements Styling */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    /* Make the input fields take up full width */
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+/* Textarea for Message */
+.contact-form textarea {
+    resize: none;
+    /* Prevent resizing */
+    height: 100px;
+    /* Set a default height for the message box */
+}
+
+/* Submit Button */
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    /* Make the button span the full width */
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-form h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: orange;
+}
+
+/* Email Text and Additional Message */
+.contact-form .info-text {
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    right: -400px;
+    top: 0;
+    z-index: 2000;
+    width: 400px;
+    height: 100vh;
+    background-color: rgba(248, 249, 250, 0.95);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: right 0.3s ease-in-out;
+    padding-top: 20px;
+}
+
+/* When sidebar is active (open) */
+.sidebar.active {
+    right: 0;
+    /* Bring the sidebar into view */
+}
+
+/* Prevent scrolling when sidebar is open */
+body.noscroll {
+    overflow: hidden;
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 15px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Sidebar structure */
+body.noscroll {
+    overflow: hidden;
+}
+
+.calendly-inline-widget {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Fix banner height */
+.banner-area {
+    height: 500px;
+    min-height: 300px;
+    background-size: cover;
+}
+
+/* Footer Styles */
+footer {
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    /* Reduce spacing */
+    font-size: 18px;
+    /* Adjust font size */
+    color: orange;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+    /* Reduce spacing */
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    color: orange;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    /* Reduce text size */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 10px;
+}
