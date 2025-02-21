@@ -34,18 +34,6 @@ python manage.py runserver
 
 ---
 
-git clone https://github.com/your-username/Yogified.git
-cd Yogified
-
-2️⃣ Create a Virtual Environment
-
-3️⃣ Install Dependencies
-Make sure to install all required dependencies before running the project:
-  pip install -r requirements.txt
-
-4️⃣ Run Django Server
-python manage.py runserver
-
 
 Output:
 
