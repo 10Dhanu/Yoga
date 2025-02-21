@@ -10,8 +10,6 @@
 ## 🌟 Features
 - 🏋️ Yoga poses and benefits.
 - 📅 Schedule yoga sessions.
-- 🎨 Responsive design (Mobile-friendly).
-- 🎥 Embedded videos for tutorials.
 - 🌍 Multi-page structure (Home, About, Contact, etc.).
 - 🔥 Fully customizable static assets.
 
