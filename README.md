@@ -2,7 +2,7 @@
 
 🚀 A **Django-based Yoga website** with **HTML, CSS, and JavaScript**, providing users with yoga-related information.
 
-![Yoga Home Page](https://yoga-xtqw.onrender.com/)
+(https://yoga-xtqw.onrender.com/)
 *📸 Homepage Screenshot*
 
 ---
