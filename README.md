@@ -1,9 +1,7 @@
 🧘 Yogified - Yoga Website Project
 
 🚀 A **Django-based Yoga website** with **HTML, CSS, and JavaScript**, providing users with yoga-related information.
-
-![Yoga Home Page](https://github.com/10Dhanu/Yoga/blob/main/index.html)
-*📸 Homepage Screenshot*
+![home page](https://github.com/user-attachments/assets/e198f90b-d1c5-4bff-a54d-d152f88492ac)
 
 ---
 
