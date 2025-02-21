@@ -32,5 +32,10 @@ Make sure to install all required dependencies before running the project:
 python manage.py runserver
 
 
+Output:
+
+🌍 Live Demo
+🔗 [View Website](https://yoga-xtqw.onrender.com/)
+
 
 
