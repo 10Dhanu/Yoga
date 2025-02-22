@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="csrf-token" content="{{ csrf_token }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="YogaFlex - Shape Your Body">
+    <title>Yogified</title>
+	
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+	<link rel="stylesheet" href="{% static 'app/styles.css' %}">
+    <script type="text/javascript" src="{% static 'app/script.js' %}"></script>
+
+	<!-- Flatpickr CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+	<!-- Flatpickr JavaScript -->
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+	<!-- Clalendly -->
+	<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+
+</head>
+<body data-aos-easing="slide" data-aos-duration="800" data-aos-delay="0">
+
+<!-- start Header & Nav-bar -->
+	<header>
+    	<nav class="navbar navbar-expand-lg" id="ftco-navbar">
+        	<div class="container-fluid">
+            	<div class="row m-auto">
+                	<div class="col-12 w-100 text-center">
+						<a class="navbar-brand" href="{% url 'home' %}">
+                        	<img src="{% static 'app/images/logo.jpg' %}" alt="Yoga Logo" class="navbar-logo">
+                    	</a>
+                	</div>
+                	</div>
+                	<div class="col-12 w-100 text-center">
+                    	<div class="collapse navbar-collapse" id="ftco-nav">
+                        	<ul class="navbar-nav m-auto">
+                            	<li class="nav-item">
+                                	<a class="nav-link" href="{% url 'home' %}">Home</a>
+                            	</li>
+                            	<li class="nav-item">
+                                	<a class="nav-link" href="{% url 'base' %}">Courses</a>
+                            	</li>
+                            	<li class="nav-item">
+                                	<a class="nav-link" href="{% url 'about' %}">About</a>
+                            	</li>
+                            	<li class="nav-item">
+                                	<a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                            	</li>
+                        	</ul>
+                        	<!-- "Book a Class" Button -->
+                        	<button class="btn btn-primary ms-3" onclick="openSidebar()">Book a Class</button>
+                    	</div>
+                	</div>
+            	</div>
+        	</div>
+    	</nav>
+	</header>
+
+	<!-- Sidebar Structure -->
+	<div id="classSidebar" class="sidebar">
+    	<a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+        <h2>Schedule with Calendly</h2>
+        <div class="calendly-inline-widget" 
+            data-url="https://calendly.com/kontakt-yogified" 
+            style="min-width:320px;height:100%;">
+        </div>
+    </div>
+
+	<!-- start banner Area -->
+    <section class="banner-area" style="background-image: url('{% static 'app/images/image1.jpg' %}')">
+	    <div class="container text-center">
+		    <div class="banner-content">
+                <h1 class="text-uppercase"><strong>About Us</strong></h1>
+            </div>
+        </div>
+    </section>
+
+	<!-- About Section -->
+	<section class="why-choose-us text-center">
+    	<div class="container">
+        	<h2><strong>Why Choose Us?</strong></h2>
+        	<div class="row">
+            	<div class="col-md-4">
+                	<h3><strong>Increase Flexibility</strong></h3>
+                	<p>Our sessions focus on improving flexibility through mindful stretches and postures.</p>
+            	</div>
+            	<div class="col-md-4">
+                	<h3><strong>Stress Relief</strong></h3>
+                	<p>Experience calmness and relaxation through guided breathing techniques.</p>
+            	</div>
+            	<div class="col-md-4">
+                	<h3><strong>Expert Instructor</strong></h3>
+                	<p>Learn from certified yoga professional who is passionate about holistic wellness.</p>
+            	</div>
+        	</div>
+    	</div>
+	</section>
+
+	<!-- Meet the Team -->
+	<section class="instructor-container">
+    	<h2><strong>Meet Our Instructor</strong></h2>
+    	<div class="instructor-section">
+        	<img src="{% static 'app/images/instructor.jpg' %}" alt="Instructor Image">
+        	<div class="instructor-text">
+            	<p><strong>Hello, I'm Deepashri. I live Berlin......</strong></p>
+        	</div>
+    	</div>
+	</section>
+
+
+	<!-- Call to Action -->
+	<section class="cta text-center">
+    	<div class="container">
+        	<h2><strong>Join Us Today</strong></h2>
+        	<p><strong>Experience the transformative power of yoga with YogaFlex. Book a class now!</strong></p>
+    	</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+    	<div class="footer-container">
+        	<div class="footer-section about">
+            	<h3><strong>About Us</strong></h3>
+            	<p><strong>Experience the art of mindful movement with our yoga classes, designed to bring harmony to mind and body.</strong></p>
+        	</div>
+        	<div class="footer-section quick-links">
+            	<h3><strong>Quick Links</strong></h3>
+            	<ul>
+                	<li><a href="{% url 'home' %}"><strong>Home</a></strong></li>
+                	<li><a href="{% url 'base' %}"><strong>Courses</a></strong></li>
+                	<li><a href="{% url 'about' %}"><strong>About</a></strong></li>
+                	<li><a href="{% url 'contact' %}"><strong>Contact</a></strong></li>
+            	</ul>
+        	</div>
+        	<div class="footer-section contact">
+            	<h3><strong>Contact Us</strong></h3>
+            	<p><strong>Email: kontakt.yogified@gmail.com</strong></p>
+        	</div>
+    	</div>
+
+		<div class="footer-bottom">
+            <strong>© 2025 YogaFlex. All rights reserved.</strong>
+        <div>
+	</footer>
+
+	<!-- Bootstrap JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+    	function openSidebar() {
+    		document.getElementById("classSidebar").style.right = "0"; // Opens sidebar
+		}
+
+		function closeSidebar() {
+    		document.getElementById("classSidebar").style.right = "-400px"; // Closes sidebar
+		}
+	</script>
+	
+</body>
+</html>
